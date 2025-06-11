@@ -29,14 +29,14 @@
       </div>
       <!-- topbar end -->
 
-      <!-- navbar start -->
+      <!-- navbar startarted -->
       <nav class="navbar">
         <ul>
           <li><a class="active" href="/index.html">HOME</a></li>
           <li><a href="/about.html">ABOUT</a></li>
           <li><a href="#">PRACTICES</a></li>
           <li><a href="#">WHAT WE DO</a></li>
-          <li><a href="#">COMMUNITY</a></li>
+          <li><a href="/community.html">COMMUNITY</a></li>
           <li><a href="#">PEOPLE</a></li>
           <li><a href="#">CONTACT</a></li>
         </ul>
@@ -372,9 +372,21 @@
           <a href="#"><i class="bx bxl-instagram"></i></a>
         </div>
 
-        <div class="newsletter">
-          <input type="email" placeholder="Enter your email" />
-          <button>Subscribe</button>
+        <div >
+          <form class="newsletter" action="https://api.web3forms.com/submit" method="POST">
+            <input
+              type="hidden"
+              name="access_key"
+              value="9751e5f1-e8a5-482f-a518-60f11c0a8075"
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Your Email"
+              required
+            />
+            <button>Subscribe</button>
+          </form>
         </div>
       </div>
 

@@ -34,7 +34,7 @@
             <li><a class="active" href="/about.html">ABOUT</a></li>
             <li><a href="#">PRACTICES</a></li>
             <li><a href="#">WHAT WE DO</a></li>
-            <li><a href="#">COMMUNITY</a></li>
+            <li><a href="/community.html">COMMUNITY</a></li>
             <li><a href="#">PEOPLE</a></li>
             <li><a href="#">CONTACT</a></li>
           </ul>
@@ -65,8 +65,8 @@
       <section class="about-section">
         <h3>ABUT US</h3>
         <h4>
-          <u class="about-u">Cultivating</u> Africa’s Future
-          <span>— Sustainably, Responsibly, Passionately</span>
+          <span class="about-underline"> Cultivating Africa’s Future </span>
+          <span class="about-normal">— Sustainably, Responsibly, Passionately</span>
         </h4>
         <p>
           <b>Terra Agri Farms East Africa Ltd</b> is a
@@ -167,9 +167,25 @@
           <a href="#"><i class="bx bxl-instagram"></i></a>
         </div>
 
-        <div class="newsletter">
-          <input type="email" placeholder="Enter your email" />
-          <button>Subscribe</button>
+        <div>
+          <form
+            class="newsletter"
+            action="https://api.web3forms.com/submit"
+            method="POST"
+          >
+            <input
+              type="hidden"
+              name="access_key"
+              value="9751e5f1-e8a5-482f-a518-60f11c0a8075"
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Your Email"
+              required
+            />
+            <button>Subscribe</button>
+          </form>
         </div>
       </div>
 
