@@ -39,7 +39,7 @@ html {
 .topbar {
   display: flex;
   justify-content: space-between;
-  padding: 15px 30px;
+  padding: 12px 80px;
   font-size: 15px;
   border-bottom: #d4d8cc94 solid 1.5px;
   position: relative;
@@ -50,12 +50,27 @@ html {
   gap: 10px;
   display: flex;
   align-items: center;
+  transition: color 0.3s ease;
 }
+
+.right:hover{
+   cursor: pointer;
+  color: #f7ce22;
+}
+
 .left {
   display: flex;
   align-items: center;
   gap: 10px;
+    transition: color 0.3s ease;
 }
+
+.left:hover {
+  cursor: pointer;
+  color: #f7ce22;
+  
+}
+
 .search-icon i {
   color: rgba(255, 255, 255, 0.507);
   font-size: 16px;
@@ -67,7 +82,7 @@ html {
 /* navbar start  */
 .navbar {
   position: absolute;
-  top: 50px;
+  top: 40px;
   right: 30px;
   z-index: 1;
 }
@@ -148,6 +163,24 @@ html {
   margin-top: 0px;
   text-align: center;
 }
+
+.hero-text a{
+  text-decoration: none;
+
+  color: #ffffff;
+  padding: 10px;
+  display: inline-block;
+  margin-top: 15px;
+  border-radius: 10px;
+  background-color: #4d914a;
+ transition: color 0.5s ease;
+}
+
+.hero-text a:hover{
+    color: #f7ce22;
+}
+
+
 
 /* logo container end  */
 /* hero content end  */
@@ -476,7 +509,7 @@ footer {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  /* filter: brightness(40%); */
+  /* filter: brightness(70%); */
   padding: 43px 0 100px;
 }
 
@@ -484,14 +517,14 @@ footer {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-color: #4b8d46;
+  background-color:  #4d914a;
   text-align: center;
   padding: 50px 0;
   color: white;
 }
 /* footer logo  */
 .footer-logo img {
-  width: 200px;
+  width: 120px;
   height: auto;
   margin-bottom: 20px;
 }

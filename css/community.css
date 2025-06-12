@@ -157,12 +157,12 @@ html {
 }
 
 .number1-text p {
-  font-size: 16px;
+  font-size: 14px;
   margin-bottom: 10px;
 }
 
 .number1-text ul li {
-  font-size: 14px;
+  font-size: 12px;
   list-style: none;
   margin-left: 10px;
   color: #67aa33;
@@ -171,7 +171,7 @@ html {
 .number1-img {
   /* flex: 1; */
   height: 100%;
-  width: 40%;
+  width: 35%;
 }
 
 .number1-img img {
@@ -188,7 +188,7 @@ html {
 }
 
 .number2-section {
-  width: 80%;
+  width: 100%;
   background-color: #ffffff;
   display: flex;
   align-items: center;
@@ -196,15 +196,35 @@ html {
   margin: 0 auto;
   padding: 10px;
   margin-top: 20px;
-  gap: 30px;
+  gap: 10px;
+}
+
+
+.number2-main-contener{
+  width: 75%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.number2-img{
+  width: 100%;
+  height: 50vh;
+
+}
+.number2-img img{
+  width: 80%;
+  height: 50vh;
 }
 
 .number2-section p {
-  font-size: 16px;
-  margin: 20px auto;
+  font-size: 14px;
+  margin: 10px auto;
 }
 .number2-section ul li {
-  font-size: 14px;
+  font-size: 12px;
   list-style: none;
   margin-left: 10px;
   color: #67aa33;
@@ -228,10 +248,10 @@ html {
 }
 .number3-section p {
   margin: 10px auto;
-  font-size: 16px;
+  font-size: 14px;
 }
 .number3-section ul li {
-  font-size: 14px;
+  font-size: 12px;
   list-style: none;
   margin-left: 10px;
   color: #67aa33;

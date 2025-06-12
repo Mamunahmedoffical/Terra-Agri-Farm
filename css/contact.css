@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-family: "Poppins", sans-serif;
+  height: 100%;
+  width: 100%;
+}
+
+/* topbar start  */
+.hero {
+  background: url("/images/contact-bnr-img.webp") no-repeat center center;
+  background-size: cover;
+  /* filter: brightness(80%); */
+  height: 100vh;
+  color: white;
+  position: relative;
+  text-align: center;
+}
+
+/* contact section started  */
+
+
+.contact-header {
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-top: 90px;
+  padding: 20px;
+}
+
+.contact-header h2 {
+  font-size: 30px;
+  color: #3daa62;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.contact-header .underline {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 25px;
+  text-decoration-color: #cbcbcb;
+}
+.contact-header p {
+  font-size: 10px;
+  color: #665959;
+}
+
+.conteiner-form {
+  width: 80%;
+  height: 50vh;
+  margin: 20px auto;
+  margin-top: 5px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  gap: 30px;
+  background-color: #fff;
+  padding: 0 20px;
+  border-radius: 12px;
+  flex-wrap: wrap;
+}
+
+/* Left side - Contact Form */
+.contact-form {
+  flex: 1 1 500px;
+}
+
+.contact-form h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  outline: none;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.contact-form button {
+  padding: 12px;
+  background-color: #3daa62;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Right side - Info boxes */
+
+.contact-sidebar {
+  flex: 1;
+  width: 80%;
+}
+
+.contact-sidebar h2 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Common style for both sections */
+.contact-info-box,
+.business-hours-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+/* Icon style */
+.contact-info-box i,
+.business-hours-box i {
+  font-size: 18px;
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px;
+  border-radius: 4px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 30px;
+  height: 30px;
+  flex-shrink: 0;
+}
+
+/* Info text for contact */
+.info-text p {
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: #444;
+  line-height: 1.4;
+}
+
+.info-text b {
+  display: block;
+  font-weight: normal;
+  color: #4caf50;
+  font-size: 14px;
+}
+
+/* Business hours list */
+.business-hours-box ul {
+  list-style: none;
+  white-space: nowrap;
+  padding: 0;
+  margin: 0;
+}
+
+.business-hours-box li {
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 5px;
+}
+
+
+@media (max-width: 768px) {
+  .contact-section {
+    flex-direction: column;
+  }
+
+  .contact-form,
+  .contact-details {
+    flex: 1 1 100%;
+  }
+}
+
+/* contact section end */
