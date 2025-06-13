@@ -1,0 +1,259 @@
+
+
+.services-section {
+  max-width: 80%;
+  margin: auto;
+  padding: 50px 0px;
+}
+
+.services-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.services-header h2 {
+  font-size: 40px;
+  color: #1f3e3e;
+}
+
+.services-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+.services-left {
+  flex: 1 1 40%;
+  min-width: 300px;
+}
+
+.services-left h3 {
+  font-size: 24px;
+  color: #164d3b;
+  margin-bottom: 10px;
+}
+
+.services-left p {
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 20px;
+  line-height: 25px;
+}
+
+.service-point {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+.service-point ul li{
+  list-style-position: inside;
+  line-height: 30px;
+  margin-top: 20px;
+}
+.grow-ul {
+  display: flex;
+  gap: 30px;
+  list-style-position: inside;
+  
+}
+/* ul li {
+  list-style-position: inside;
+  list-style-type: none;
+} */
+.service-point img {
+  width: 45px;
+  margin-right: 10px;
+}
+
+.slider-container {
+  flex: 1 55%;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider-track {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.service-card {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 30px 20px;
+  margin-right: 20px;
+  min-width: 268px;
+  flex: 0 0 268px;
+  text-align: center;
+  transition: all 0.9s;
+}
+
+.service-card.active {
+  background: #388e3c;
+  color: white;
+}
+
+.service-card img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 15px;
+}
+
+.service-card h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  font-size: 14px;
+}
+
+.dots {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.dot {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  margin: 0 5px;
+  background-color: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: orange;
+}
+
+@media (max-width: 768px) {
+  .services-section {
+    flex-direction: column;
+    max-width: 87%;
+    margin: auto;
+    padding: 50px 0px;
+  }
+  .slider-track {
+    flex-wrap: nowrap;
+  }
+
+  .service-card {
+    flex: 0 0 32%;
+    min-width: 32%;
+    margin: 5px;
+  }
+  .mau {
+    margin-left: 30px;
+  }
+}
+
+/* Grain-Crops-section start */
+.Grain-Crops-section {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+.Grain-Crops-section-img img{
+width: 100%;
+height: 400px;
+object-fit: cover;
+}
+.Grain-Crops h2{
+  margin: 50px 0px  0px 0px;
+}
+.Grain-Crops p{
+  margin: 30px 0px;
+  line-height: 25px;
+}
+.Grain-Crops ul li {
+  color: #4c8a26d2;
+  line-height: 25px;
+  list-style-position: inside;
+  list-style: none;
+}
+ .Grain-Crops ul li .fa-solid {
+  color: #7fff00;
+  margin-right: 20px;
+  
+}
+/* Grain-Crops-section end */
+
+/* Forage & Fodder Crops start  */
+.Why-Our-Crop-div {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+  gap: 15px;
+  margin-top: 50px;
+}
+.Why-Our-Crop-div h2{
+  margin: 50px 0px 20px 0px;
+
+}
+.Why-Our-Crop-div p{
+  margin: 30px 0px 20px 0px;
+
+}
+.Why-Our-Crop-div ul li{
+  /* color: #33a10e; */
+  line-height: 25px;
+  list-style-position: inside;
+  
+}
+.Why-Our-Crop-div ul li .fa-solid{
+  color: #7fff00;
+  margin-right: 20px;
+}
+.Why-Our-Crop-text{
+  flex-basis: 33%;
+  
+}
+.divader-div{
+display: flex;
+align-items: center;
+
+}
+.divader-div .fa-solid{
+  color: #7fff00;
+  font-size: 22px;
+}
+.divader-div .fa-regular{
+  color: #7fff00;
+  border: 3px solid #7fff00;
+  border-radius: 50%;
+}
+.divader{
+  width: 100%;
+  height: 2px;
+  background-color: #7bba3c;
+}
+
+.About-Our-Crops{
+ 
+  margin:  0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  margin: 50px 0px;
+}
+.About-Our-Crops p{
+margin: 20px;
+}
+.About-Our-Crops button{
+background-color: #b2dc08dd;
+color: #101010;
+font-weight: 800;
+outline: none;
+border: none;
+padding: 15px 30px;
+font-size: 18px;
+border-radius: 100px;
+margin: 20px;
+}
+/* Forage & Fodder Crops end  */

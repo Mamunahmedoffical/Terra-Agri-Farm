@@ -34,16 +34,24 @@ html {
 .about-bg h2 {
   display: inline-block;
   background-color: #3fa709;
-  font-size: 40px;
-  padding: 0 10px;
+  color: white;
+  font-size: 35px;
+  padding: 0 20px;
   border-radius: 5px;
+  box-sizing: border-box;
+  white-space: nowrap;
+  text-align: start !important;
+  padding-left: 0;
+  width: 27%;
+  position: relative;
+  left: 13%;
+  transform: translateX(-48%);
 }
 .about-breadcrumb {
   background-color: #3fa709;
   justify-content: flex-start;
-
   width: 27%;
-  margin-top: 10px;
+  margin-top: 5px;
   list-style-position: inside;
   list-style-type: disc;
   position: relative;
@@ -98,6 +106,7 @@ html {
   height: 6px;
   background-color: #67aa33;
   border-radius: 2px;
+  transform: translateY(-1px);
 }
 
 .community-section .community-normal {
@@ -199,8 +208,7 @@ html {
   gap: 10px;
 }
 
-
-.number2-main-contener{
+.number2-main-contener {
   width: 75%;
   margin: 0 auto;
   display: flex;
@@ -209,12 +217,11 @@ html {
   gap: 5px;
 }
 
-.number2-img{
+.number2-img {
   width: 100%;
   height: 50vh;
-
 }
-.number2-img img{
+.number2-img img {
   width: 80%;
   height: 50vh;
 }
@@ -308,7 +315,7 @@ html {
   margin-top: 40px;
   background-color: #faebd77e;
 }
-.get-involved-text{
+.get-involved-text {
   width: 70%;
   position: relative;
   top: 30%;
@@ -317,29 +324,109 @@ html {
   gap: 10px;
 }
 
-.get-involved-text h2{
+.get-involved-text h2 {
   font-size: 30px;
   color: #1d4d4f;
   font-weight: 300;
   margin-bottom: 10px;
 }
- 
-.get-involved-text p{
+
+.get-involved-text p {
   font-size: 16px;
   color: #1d4d4f;
   margin-bottom: 20px;
 }
 
-.get-involved-text a{
+.get-involved-text a {
   text-decoration: none;
   color: #ffffff;
   padding: 10px;
   border-radius: 5px;
-background-color: #1d4d4f;
- transition: color 0.3s ease;
+  background-color: #1d4d4f;
+  transition: color 0.3s ease;
 }
 
-.get-involved-text a:hover{
- color: #f7ce22;
-
+.get-involved-text a:hover {
+  color: #f7ce22;
 }
+
+
+/* cta button design started  */
+
+.cta-btn {
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 12px;
+  margin-top: 30px;
+}
+
+.cta-btn::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+.cta-btn::before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 600%;
+  z-index: -1;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  filter: blur(8px);
+  animation: glowing 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+  opacity: 0;
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.cta-btn:hover::before {
+  opacity: 1;
+}
+
+.cta-btn:active:after{
+  background: transparent;
+}
+
+.cta-btn:active {
+  color: #000;
+  font-weight: bold;
+}
+
+/* cta button design end  */
