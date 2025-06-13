@@ -157,6 +157,7 @@ html {
 .number1-text {
   height: 80%;
   display: flex;
+  color: #1d4d4f;
   flex-direction: column;
   justify-content: center;
   width: 100%;
@@ -199,6 +200,7 @@ html {
 .number2-section {
   width: 100%;
   background-color: #ffffff;
+  color: #1d4d4f;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -247,6 +249,7 @@ html {
 .number3-section {
   width: 70%;
   background-color: #ffffff;
+  color: #1d4d4f;
   align-items: center;
   justify-content: center;
   margin: 0 auto;
@@ -289,6 +292,7 @@ html {
 
 .community-number5 {
   text-align: start;
+  color: #1d4d4f;
   margin: 0 auto;
   width: 70%;
   margin-top: 60px;
