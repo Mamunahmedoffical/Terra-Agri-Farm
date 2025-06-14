@@ -1,0 +1,472 @@
+
+      <div class="slider-container">
+        <div class="slider-track" id="sliderTrack">
+          <!-- Slide 1 -->
+          <div class="card">
+            <img src="images/men-img(2).jpg" alt="" />
+            <p>One Family</p>
+          </div>
+          <div class="card">
+            <img src="images/men-img(2).jpg" alt="" />
+            <p>One Community</p>
+          </div>
+          <div class="card">
+            <img src="images/men-img(2).jpg" alt="" />
+            <p>One Movement</p>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="card">
+            <img src="images/contact-form.jpg" alt="" />
+            <p>One Dream</p>
+          </div>
+          <div class="card">
+            <img src="images/Maize Field 3 - 04-2023.jpg" alt="" />
+            <p>One Purpose</p>
+          </div>
+          <div class="card">
+            <img src="images/blog-img-2.png" alt="" />
+            <p>One Vision</p>
+          </div>
+          <!-- Slide 3 -->
+          <div class="card">
+            <img src="images/contact-form.jpg" alt="" />
+            <p>One</p>
+          </div>
+          <div class="card">
+            <img src="images/Maize Field 3 - 04-2023.jpg" alt="" />
+            <p>One</p>
+          </div>
+          <div class="card">
+            <img src="images/blog-img-2.png" alt="" />
+            <p>One</p>
+          </div>
+        </div>
+
+        <!-- Dot Navigation -->
+        <div class="dots">
+          <span class="dot active" onclick="moveToSlide(0)"></span>
+          <span class="dot" onclick="moveToSlide(1)"></span>
+          <span class="dot" onclick="moveToSlide(2)"></span>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+      <style>
+
+.our-people {
+  width: 80%;
+  margin: 0 auto;
+}
+.our-people h2 {
+  font-size: 28px;
+  margin: 20px 0px;
+  padding: 0px 20px 0px 20px;
+  color: #5bf900;
+}
+.our-people h3 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 30px;
+  padding: 0px 20px 0px 20px;
+}
+.our-people-text {
+  font-size: 18px;
+  margin: 50px 0px;
+  line-height: 25px;
+  padding: 0px 20px 0px 20px;
+}
+
+
+
+
+
+
+.highlight {
+  color: #2e7d32;
+  font-weight: bold;
+}
+
+.slider-container {
+  width: 70%;
+  /* max-width: 80%; */
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  padding: 10px;
+}
+
+.slider-track {
+  display: flex;
+  margin: 0 auto;
+  /* gap: 20px; */
+  gap: 0;
+  transition: transform 0.5s ease;
+}
+
+.card {
+  flex: 0 0 31.3333%;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.card img {
+  /* width: 380px; */
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.card p {
+  width: 15%;
+  padding: 5px;
+  color: green;
+  font-weight: bold;
+  background-color: #f3f5f3;
+  position: absolute;
+  margin-top: 10.5rem;
+}
+
+.dots {
+  margin-top: 15px;
+  margin-left: 10px;
+  position: absolute;
+  left: 50%;
+  bottom: 10px;
+}
+
+.dots span {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+  background-color: #7fff00;
+}
+
+.dot.active {
+  background-color: orange;
+}
+
+
+      </style>
+
+
+
+
+
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-family: "Poppins", sans-serif;
+  height: 100%;
+  width: 100%;
+}
+.about-bg {
+  background: url("/images/our-people-bnr.webp");
+  background-size: cover;
+  height: 40vh;
+  width: 90%;
+  margin: 0 auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+
+
+.slider-text {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.slider-text h2 {
+  margin-top: 20px;
+  font-size: 30px;
+}
+.slider-text h3 {
+  margin-top: 20px;
+}
+
+
+/* our-people-slider start */
+
+
+
+
+/* 🔸 Main slider container */
+.slider-container {
+  width: 70%;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+/* 🔸 Track will move horizontally */
+.slider-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  /* total width = 9 cards * (card width + gap) */
+  width: calc((300px + 20px) * 9);
+}
+
+/* 🔸 Each card: fixed size */
+.card {
+  flex: 0 0 300px;
+  margin-right: 20px; /* small gap between cards */
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+}
+
+/* 🔸 Image styling */
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* 🔸 Text at bottom of card */
+.card p {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 6px 12px;
+  color: green;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+/* 🔸 Overlay headline for 1st card */
+.card-overlay {
+  position: absolute;
+  bottom: 45px;
+  left: 10px;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 5px 10px;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+/* 🔸 Dots */
+.dots {
+  text-align: center;
+  margin-top: 20px;
+}
+.dot {
+  height: 12px;
+  width: 12px;
+  background-color: #ccc;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 5px;
+  cursor: pointer;
+}
+.dot.active {
+  background-color: orange;
+}
+
+/* 🔸 Responsive: Mobile view */
+@media (max-width: 768px) {
+  .slider-track {
+    width: auto;
+    flex-wrap: wrap;
+    transform: none !important;
+  }
+
+  .card {
+    flex: 0 0 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .dots {
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+/*our-people-slider end */
+
+/* our-people-card start */
+.our-dream p {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  margin-top: 50px;
+  line-height: 25px;
+}
+.Locally-img img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+.Locally-text {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.Locally-text h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 30px 0px 10px 0px;
+}
+.Locally-text h3 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 25px;
+}
+.Locally-text p {
+  margin: 15px 0px 30px 0px;
+  line-height: 25px;
+}
+.Locally-text ul li {
+  list-style-type: none;
+  list-style-position: inside;
+  margin-bottom: 20px;
+  color: #4c8a26d2;
+}
+.Locally-text ul li .fa-solid {
+  margin-right: 20px;
+  color: #7fff00;
+  font-size: 20px;
+}
+
+/* Community-Driven end */
+
+/*Capacity-Building start  */
+
+.Capacity-Building-img img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  margin-bottom: 50px;
+  margin-top: 20px;
+}
+.Capacity-Building {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.Capacity-Building h3 {
+  font-size: 20px;
+  font-weight: 500;
+}
+/* Capacity-Building end */
+
+/* testimonial desidn start*/
+.say-people {
+  display: flex;
+  justify-content: center;
+}
+.testimonial {
+  width: 300px;
+  width: 300px;
+  text-align: center;
+  margin: 50px 20px;
+}
+.testimonial-text h4 {
+  margin: 20px 0px;
+}
+.Wha-tOur-People h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #64b536;
+  font-size: 28px;
+  margin-top: 30px;
+}
+.men-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 100px;
+  object-fit: cover;
+  margin-bottom: 30px;
+}
+
+.star-img .fa-solid {
+  width: 20px;
+  color: #6bb81e;
+}
+.star-img {
+  gap: 20px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+/* testimonial desidn end */
+
+/* mission-section start  */
+.mission-section {
+  max-width: 80%;
+  margin: 60px auto;
+  padding: 40px 30px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+.mission-section h2 {
+  font-size: 32px;
+  color: #2e7d32;
+  margin-bottom: 20px;
+}
+
+.mission-section p {
+  font-size: 18px;
+  color: #333;
+  line-height: 1.6;
+  margin: 10px 0;
+}
+
+.mission-buttons {
+  margin-top: 30px;
+}
+
+.mission-buttons .btn {
+  display: inline-block;
+  padding: 12px 20px;
+  margin: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: #2e7d32;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.mission-buttons .btn:hover {
+  background-color: #256728;
+}
+/* mission-section end */
