@@ -22,26 +22,48 @@ html {
   background-repeat: no-repeat;
 }
 
-
-
-
 .slider-text {
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
+   margin-top: 100px;
+
 }
 
 .slider-text h2 {
-  margin-top: 20px;
-  font-size: 30px;
+   color: #67aa33;
+  font-weight: 300;
+  font-size: 20px;
+  text-transform: uppercase;
 }
 .slider-text h3 {
-  margin-top: 20px;
+ color: #1d4d4f;
+  font-weight: bold;
+  font-size: 30px;
+  margin: 30px 0;
 }
+
+
+.people-underline {
+  position: relative;
+  padding-bottom: -20px;
+}
+
+.people-underline::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background-color: #67aa33;
+  border-radius: 2px;
+  transform: translateY(-4px);
+}
+
+
 
 
 /* our-people-slider start */
-
-
 
 .our-people {
   width: 80%;
@@ -66,11 +88,6 @@ html {
   padding: 0px 20px 0px 20px;
 }
 
-
-
-
-
-
 .highlight {
   color: #2e7d32;
   font-weight: bold;
@@ -78,7 +95,6 @@ html {
 
 .slider-container {
   width: 80%;
-  /* max-width: 80%; */
   margin: auto;
   overflow: hidden;
   position: relative;
@@ -88,19 +104,19 @@ html {
 .slider-track {
   display: flex;
   margin: 0 auto;
-  /* gap: 20px; */
   gap: 0;
   transition: transform 0.5s ease;
+  gap: 0;
 }
 
 .card {
   flex: 0 0 31.3333%;
   padding: 5px;
   box-sizing: border-box;
+  gap: 1px;
 }
 
 .card img {
-  /* width: 380px; */
   width: 300px;
   height: 200px;
   object-fit: cover;
@@ -110,18 +126,22 @@ html {
 .card p {
   width: 15%;
   padding: 5px;
-  color: green;
+  color: #67aa33;
   font-weight: bold;
   background-color: #f3f5f3;
   position: absolute;
   margin-top: 10.5rem;
 }
 
+.card:hover {
+  box-shadow: none;
+  cursor: pointer;
+}
+
 .dots {
   margin-top: 15px;
-  margin-left: 10px;
-  position: absolute;
-  left: 50%;
+  position: relative;
+  left: 47%;
   bottom: 10px;
 }
 
@@ -131,22 +151,17 @@ html {
   border-radius: 50%;
   display: inline-block;
   cursor: pointer;
-  background-color: #7fff00;
+  background-color: #adb5bd;
 }
 
 .dot.active {
   background-color: orange;
 }
 
-
-
-
-
-/*our-people-slider end */
-
 /* our-people-card start */
 .our-dream p {
   width: 80%;
+   color: #1d4d4f;
   margin: 0 auto;
   margin-bottom: 30px;
   margin-top: 50px;
@@ -164,18 +179,21 @@ html {
 }
 
 .Locally-text h2 {
-  font-size: 28px;
+  font-size: 38px;
+  color: #1d4d4f;
   font-weight: 700;
   margin: 30px 0px 10px 0px;
 }
 .Locally-text h3 {
+   color: #1d4d4f;
   font-size: 20px;
   font-weight: 500;
-  line-height: 25px;
+ line-height: 25px;
 }
 .Locally-text p {
   margin: 15px 0px 30px 0px;
   line-height: 25px;
+   color: #1d4d4f;
 }
 .Locally-text ul li {
   list-style-type: none;
@@ -227,7 +245,7 @@ html {
 .Wha-tOur-People h2 {
   text-align: center;
   margin-bottom: 30px;
-  color: #64b536;
+    color: #1d4d4f;
   font-size: 28px;
   margin-top: 30px;
 }
@@ -241,61 +259,151 @@ html {
 
 .star-img .fa-solid {
   width: 20px;
-  color: #6bb81e;
+    color: rgba(255, 217, 0, 0.74);
 }
 .star-img {
-  gap: 20px;
+  gap: 10px;
   display: flex;
   text-align: center;
   justify-content: center;
   margin-top: 5px;
 }
 
+
+.star-img i{
+  font-size: 20px;
+}
+
 /* testimonial desidn end */
 
 /* mission-section start  */
-.mission-section {
-  max-width: 80%;
-  margin: 60px auto;
-  padding: 40px 30px;
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
-  text-align: center;
+
+
+
+
+.conteiner-1 {
+  margin: 0 auto;
+  width: 80%;
+  padding: 20px 0;
+}
+.last-conteiner h2 {
+  color: #1d4d4f;
+  font-weight: 400;
+  font-size: 50px;
+  margin: 1px 0;
 }
 
-.mission-section h2 {
-  font-size: 32px;
-  color: #2e7d32;
-  margin-bottom: 20px;
+.last-conteiner h3{
+  color: #1d4d4f;
+  font-weight: 400;
+  font-size: 30px;
+  margin: 1px 0;
 }
 
-.mission-section p {
-  font-size: 18px;
-  color: #333;
-  line-height: 1.6;
-  margin: 10px 0;
-}
-
-.mission-buttons {
-  margin-top: 30px;
-}
-
-.mission-buttons .btn {
-  display: inline-block;
-  padding: 12px 20px;
-  margin: 8px;
+.last-conteiner p {
+  color: #1d4d4f;
   font-size: 16px;
-  font-weight: bold;
-  color: white;
-  background-color: #2e7d32;
-  border: none;
-  border-radius: 6px;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
+  margin: 1px 0;
 }
 
-.mission-buttons .btn:hover {
-  background-color: #256728;
+
+.drone-img img {
+  width: 100%;
+  height: 50vh;
+  margin: 10px 0;
+  object-fit: cover;
+  object-position: center;
 }
+
+.mission-text {
+margin-top: 20px;
+margin-bottom: 20px;
+color: #1d4d4f;
+}
+.mission-text p{
+  font-size: 16px;
+}
+
+/* cta button design started  */
+
+.cta-btn {
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 12px;
+  margin-top: 30px;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.cta-btn::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+   background-color: #4d914a;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+.cta-btn::before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 600%;
+  z-index: -1;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  filter: blur(8px);
+  animation: glowing 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+  opacity: 0;
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.cta-btn:hover::before {
+  opacity: 1;
+}
+
+.cta-btn:active:after{
+  background: transparent;
+}
+
+.cta-btn:active {
+  color: #000;
+  font-weight: bold;
+}
+
+/* cta button design end  */
+
 /* mission-section end */

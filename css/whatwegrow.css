@@ -1,3 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-family: "Poppins", sans-serif;
+  height: 100%;
+  width: 100%;
+}
+.about-bg {
+  background: url("/images/what-we-grow.webp");
+  background-size: cover;
+  height: 40vh;
+  width: 90%;
+  margin: 0 auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.about-header-nav h2 {
+  font-size: 40px;
+}
+
 
 
 .services-section {
@@ -164,10 +191,12 @@ object-fit: cover;
 }
 .Grain-Crops h2{
   margin: 50px 0px  0px 0px;
+   color: #1d4d4f;
 }
 .Grain-Crops p{
   margin: 30px 0px;
   line-height: 25px;
+   color: #1d4d4f;
 }
 .Grain-Crops ul li {
   color: #4c8a26d2;
@@ -190,6 +219,7 @@ object-fit: cover;
   margin: 0 auto;
   gap: 15px;
   margin-top: 50px;
+    color: #1d4d4f;
 }
 .Why-Our-Crop-div h2{
   margin: 50px 0px 20px 0px;
@@ -200,9 +230,9 @@ object-fit: cover;
 
 }
 .Why-Our-Crop-div ul li{
-  /* color: #33a10e; */
   line-height: 25px;
   list-style-position: inside;
+  list-style: none;
   
 }
 .Why-Our-Crop-div ul li .fa-solid{
