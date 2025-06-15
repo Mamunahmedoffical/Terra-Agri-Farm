@@ -26,8 +26,9 @@ html {
 }
 
 .services-section {
-  width: 90%;
+  width: 80%;
   margin: auto;
+
   padding: 50px 0px;
 }
 
@@ -45,13 +46,15 @@ html {
 .services-content {
   display: flex;
   flex-wrap: wrap;
-  gap: 40px;
+  gap: 30px;
+
   justify-content: space-between;
 }
 
 .services-left {
   flex: 1 1 40%;
   min-width: 300px;
+   
 }
 
 .services-left h3 {
@@ -71,6 +74,7 @@ html {
   display: flex;
   align-items: flex-start;
   margin-bottom: 15px;
+  
 }
 .service-point ul li {
   list-style: none;
@@ -86,9 +90,10 @@ html {
 /* Right slider started  */
 
 .slider-container {
-  flex: 2 1 50%;
+  flex: 2 1 55%;
   overflow: hidden;
   width: 100%;
+   
 }
 
 .slider-track {
@@ -116,6 +121,7 @@ html {
   background: #388e3c;
   color: #f9fcf9;
 }
+
 .service-card img {
   width: 70px;
   height: 70px;
@@ -384,3 +390,18 @@ p {
 /* cta button design end  */
 
 /* Forage & Fodder Crops end  */
+
+/* footer code start */
+.footer-bottom {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #034013ee;
+  padding: 0;
+  color: white;
+  text-transform: uppercase;
+}
+.footer-content p {
+  color: #ffffff;
+}
+/* footer code end */
